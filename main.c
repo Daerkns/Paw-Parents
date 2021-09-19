@@ -87,7 +87,7 @@ int main()//Raomi & Nasiha
 
     FILE *sale; 
     sale=fopen("sales.txt", "a+");
-	printf("\t\tTO buy things press 1/n/t/tto exit press 0     ");
+	printf("\t\tTO buy things press 1\n\t\tTo exit press 0     ");
 	fflush(stdin);
 	scanf("%d", &cho);
 	if(cho==0)
