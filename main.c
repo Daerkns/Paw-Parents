@@ -71,7 +71,6 @@ int uquantity;
 int citem;
 
 int main()//Raomi & Nasiha
-
 {
     system("PAW PARENTS");
 	fileloader();
@@ -87,7 +86,7 @@ int main()//Raomi & Nasiha
 
     FILE *sale; 
     sale=fopen("sales.txt", "a+");
-	printf("\t\tTO buy things press 1\n\t\tTo exit press 0     ");
+	printf("\t\tTo buy things press 1\n\t\tTo exit press 0     ");
 	fflush(stdin);
 	scanf("%d", &cho);
 	if(cho==0)
@@ -256,9 +255,7 @@ psmenu:
                     goto psmenu;
                 }
             }
-
             ///Credit Card Option
-
             else if(payment==2)
             {
                 int card_number[100];
@@ -501,7 +498,6 @@ void deleteproduct(int serial)//souvik
                 printf(" .");
                 Sleep(400);
             }
-
             printf("\n\n\n\n\t\t\tDeleted Successfylly \n");
             Sleep(500);
         }
@@ -522,7 +518,6 @@ void deleteproduct(int serial)//souvik
             printf(" .");
             Sleep(400);
         }
-
         printf("\n\n\n\n\t\t\tDeleted Successfylly \n");
         Sleep(500);
         head = temp ;
@@ -571,7 +566,6 @@ int countitem()//ehsan
 
 void item_list()//raomi or nasiha
 {
-
     cls();
     printf("press .0. Main Menu ");
     linebreak(4);
@@ -604,9 +598,7 @@ void order_view(int order, int quantity, int or_no)//SOUVIK
 
     while(temp->data != order)
     {
-
         temp = temp->next;
-
     }
     if(temp->data == order)
     {
@@ -625,7 +617,6 @@ void order_view(int order, int quantity, int or_no)//SOUVIK
 
 void backuploader(void)//ehsan
 {
-
     for (int i=15; i<=100; i+=5)
     {
         cls();
@@ -657,7 +648,6 @@ void choice(int ch)//NASIHA RAOMI
         {
             item_list();
         }  
-
         else if( ch == 2)
         {
             achoice();
@@ -695,7 +685,6 @@ adminpanelchoice:
     Sleep(300);
     printf("\t\t\tEnter Admin password: ");
 
-
     fflush(stdin);
     scanf("%d", &password);
 
@@ -703,7 +692,6 @@ adminpanelchoice:
     {
         node *temp;
         temp = list;
-
 adminchoice:
         cls();
         linebreak(3);
@@ -740,7 +728,6 @@ adminchoice:
 
         if(adminchoice==1)//souvik
         {
-
             cls();
             gap();
             pre(4);
@@ -767,20 +754,16 @@ adminchoice:
 
                 for(int z=1; z<=c; z++)
                 {
-
                     printf("|  %d  | %0.2f |\n",cardno[z],cardmoney[z]);
                     pre(4);
                     printf("------------------------------\n");
                     pre(4);
                     Sleep(150);
-
                 }
                 Sleep(1500);
             }
-
             if(c==0)
             {
-
                 cls();
                 gap();
                 pre(4);
@@ -789,10 +772,8 @@ adminchoice:
             Sleep(1500);
             goto adminchoice;
         }
-
         else if(adminchoice==3)//souvik
         {
-
 productadd:
             cls();
 			FILE *admin;
@@ -803,7 +784,6 @@ productadd:
             int fdata;
             float fprice;
             int fposi;
-
 
             linebreak(3);
             pre(4);
@@ -820,14 +800,11 @@ fquantity:
 
             scanf("%d",&fquantity);
             fflush(stdin);
-
 productserial:
             linebreak(2);
             pre(4);
             printf(" Enter Item Serial :  ");
             scanf("%d",&fdata);
-        
-        
 fprice:
             fflush(stdin);
 
@@ -856,8 +833,7 @@ fprice:
             Sleep(2000);
 
             goto adminchoice;
-}
-
+        }
         else if(adminchoice==4)//ehsan
         {
             cls();
@@ -912,10 +888,8 @@ fdelete:
 			temp=temp->next;
 			}
 		}
-
         else if(adminchoice==6)//souvik
         {
-
             citem = countitem();
             cls();
             for(int cs=1; cs<=citem; cs++)
@@ -934,7 +908,6 @@ fdelete:
             Sleep(2000);
             goto adminchoice;
         }
-
         ///Backup System
         else if(adminchoice==7)//souvik
         {
@@ -963,13 +936,11 @@ fdelete:
             printf("Backup Successfull...");
             Sleep(1500);
 
-
             fclose(fptr);
             goto adminchoice;
         }
         else if(adminchoice==8)//ehsan
         {
-
             cls();
             linebreak(2);
             pre(2);
@@ -979,7 +950,6 @@ fdelete:
             {
                 order_view(total_order[o],order_quantity[o],o);
             }
-
             linebreak(2);
             pre(4);
             printf("1. <-- back  \n\n");
@@ -1027,10 +997,8 @@ fdelete:
  			goto adminchoice;
  		}	
  	}
-    
         else if(adminchoice==0)
         {
-
             main_menu();
         }
         else
@@ -1041,9 +1009,7 @@ fdelete:
             Sleep(500);
             goto adminchoice;
         }
-
     }
-
     else if(password==1)
     {
         main_menu();
