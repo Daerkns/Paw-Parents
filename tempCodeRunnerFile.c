@@ -70,7 +70,7 @@ int order=0;
 int uquantity;
 int citem;
 
-int main()//RAOMI & NASIHA
+int main()//Raomi & Nasiha
 {
     system("PAW PARENTS");
 	fileloader();
@@ -432,7 +432,7 @@ void main_menu()
     choice(main_menu_choice);
 }
 
-void insertend(int data, char productname[25], int quantity, float price)//NASIHA
+void insertend(int data, char productname[25], int quantity, float price)//nasiha
 {
     node *temp;
 
@@ -463,7 +463,7 @@ void insertend(int data, char productname[25], int quantity, float price)//NASIH
     }
 }
 
-void insertfirst(int data, char productname[25], int quantity, float price)//RAOMI
+void insertfirst(int data, char productname[25], int quantity, float price)//raomi
 {
     node *temp;
     temp=(node *)malloc(sizeof(node));
@@ -476,7 +476,7 @@ void insertfirst(int data, char productname[25], int quantity, float price)//RAO
     list = head ;
 }
 
-void deleteproduct(int serial)//SOUVIK
+void deleteproduct(int serial)//souvik
 {
     node *temp;
     temp=(node *)malloc(sizeof(node));
@@ -525,7 +525,7 @@ void deleteproduct(int serial)//SOUVIK
     }
 }
 
-void updateproduct(int udata, int uquantity)//EHASAN
+void updateproduct(int udata, int uquantity)//ehsan
 {
     node *temp;
     temp = list;
@@ -540,7 +540,7 @@ void updateproduct(int udata, int uquantity)//EHASAN
     }
 }
 
-int countitem()//EHASAN
+int countitem()//ehsan
 {
     node *temp;
 
@@ -564,7 +564,7 @@ int countitem()//EHASAN
     return countitem;
 }
 
-void item_list()//RAOMI
+void item_list()//raomi or nasiha
 {
     cls();
     printf("press .0. Main Menu ");
@@ -615,7 +615,7 @@ void order_view(int order, int quantity, int or_no)//SOUVIK
     }
 }
 
-void backuploader(void)//EHASAN
+void backuploader(void)//ehsan
 {
     for (int i=15; i<=100; i+=5)
     {
@@ -640,7 +640,7 @@ void gap(void)
     printf("\n\n\n\n\n\n\n");
 }
 
-void choice(int ch)//NASIHA
+void choice(int ch)//NASIHA RAOMI
 {
     if((ch >=1 && ch <=3))
     {
@@ -672,7 +672,7 @@ void choice(int ch)//NASIHA
     }
 }
 
-void achoice()//EHASAN & SOUVIK
+void achoice()//Ehsan and souvik
 {
 adminpanelchoice:
     ;
