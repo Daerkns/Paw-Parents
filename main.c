@@ -1,4 +1,4 @@
-#include<stdio.h>
+comed#include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
 #include<string.h>
@@ -364,7 +364,7 @@ psmenu2:
     }  ///end get product choice
 }
 
-void fileloader()
+void fileloader()//Ehasan
 {
 	int serial, qntt; float prc; char itm[25];
 	FILE *admin;
@@ -499,12 +499,12 @@ void deleteproduct(int serial)//RAOMI
                 Sleep(400);
             }
             printf("\n\n\n\n\t\t\tDeleted Successfylly \n");
-            Sleep(500);
+            getch();
         }
         else
         {
             printf("\n\n\n\n\t\t\ Item Not Found\n");
-            Sleep(500);
+            getch();
         }
         head = temp ;
     }
@@ -869,7 +869,7 @@ fdelete:
  		{
  			system("cls");
  			int search, qtt;
- 			printf("\n\n\t\tsearch item(insert serial number: ");
+ 			printf("\n\n\t\tsearch item(insert serial number): ");
  			fflush(stdin);
  			scanf("%d", &search);
  		    node *temp;
