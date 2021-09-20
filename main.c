@@ -499,12 +499,12 @@ void deleteproduct(int serial)//RAOMI
                 Sleep(400);
             }
             printf("\n\n\n\n\t\t\tDeleted Successfylly \n");
-            Sleep(500);
+            getch();
         }
         else
         {
             printf("\n\n\n\n\t\t\ Item Not Found\n");
-            Sleep(500);
+            getch();
         }
         head = temp ;
     }
