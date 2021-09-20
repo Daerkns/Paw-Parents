@@ -128,7 +128,7 @@ sell:
         {
             linebreak(2);
             pre(3);
-            echo("Please Choice From List: ");
+            echo("Please Choose From List: ");
             linebreak(2);
             Sleep(1000);
             item_list();
@@ -251,7 +251,7 @@ psmenu:
                 {
                     linebreak(2);
                     pre(4);
-                    printf("Please Choice from list : ");
+                    printf("Please Choose from list : ");
                     goto psmenu;
                 }
             }
@@ -327,7 +327,7 @@ psmenu2:
                 {
                     linebreak(2);
                     pre(4);
-                    printf("Please Choice from list : ");
+                    printf("Please Choose from list : ");
                     goto psmenu2;
                 }
             }
@@ -335,7 +335,7 @@ psmenu2:
             {
                 linebreak(2);
                 pre(4);
-                printf("Enter Choice from List : ");
+                printf("Enter Choose from List : ");
                 goto payment;
             }
         }    ///END Confirm Y/y
@@ -357,7 +357,7 @@ psmenu2:
     {
         linebreak(2);
         pre(4);
-        echo("Please Choice From List ");
+        echo("Please Choose From List ");
         linebreak(2);
         Sleep(300);
         item_list();
