@@ -569,9 +569,9 @@ void item_list()//RAOMI
     cls();
     printf("press .0. Main Menu ");
     linebreak(4);
-	int quan, dat;
-	float pri;
-	char itemnm[40];
+	  int quan, dat;
+	  float pri;
+	  char itemnm[40];
     node *temp;
     temp = list;
 
