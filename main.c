@@ -298,7 +298,7 @@ psmenu:
 
                 linebreak(2);
                 pre(4);
-                printf("1. Wanna Buy Another Delicious ? ");
+                printf("1. Buy another Product ");
                 linebreak(2);
                 pre(4);
                 printf("2. Main Menu \n");
@@ -904,7 +904,7 @@ fdelete:
             cls();
             gap();
             pre(4);
-            printf("Total Item Item is:  %d  \n",citem);
+            printf("Total Item variety is:  %d  \n",citem);
             Sleep(2000);
             goto adminchoice;
         }

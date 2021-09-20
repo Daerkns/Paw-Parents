@@ -70,7 +70,7 @@ int order=0;
 int uquantity;
 int citem;
 
-int main()//Raomi & Nasiha
+int main()//RAOMI & NASIHA
 {
     system("PAW PARENTS");
 	fileloader();
@@ -432,7 +432,7 @@ void main_menu()
     choice(main_menu_choice);
 }
 
-void insertend(int data, char productname[25], int quantity, float price)//nasiha
+void insertend(int data, char productname[25], int quantity, float price)//EHASAN
 {
     node *temp;
 
@@ -463,7 +463,7 @@ void insertend(int data, char productname[25], int quantity, float price)//nasih
     }
 }
 
-void insertfirst(int data, char productname[25], int quantity, float price)//raomi
+void insertfirst(int data, char productname[25], int quantity, float price)//SOUVIK
 {
     node *temp;
     temp=(node *)malloc(sizeof(node));
@@ -476,7 +476,7 @@ void insertfirst(int data, char productname[25], int quantity, float price)//rao
     list = head ;
 }
 
-void deleteproduct(int serial)//souvik
+void deleteproduct(int serial)//RAOMI
 {
     node *temp;
     temp=(node *)malloc(sizeof(node));
@@ -525,7 +525,7 @@ void deleteproduct(int serial)//souvik
     }
 }
 
-void updateproduct(int udata, int uquantity)//ehsan
+void updateproduct(int udata, int uquantity)//NASIHA
 {
     node *temp;
     temp = list;
@@ -540,7 +540,7 @@ void updateproduct(int udata, int uquantity)//ehsan
     }
 }
 
-int countitem()//ehsan
+int countitem()//EHASAN
 {
     node *temp;
 
@@ -564,7 +564,7 @@ int countitem()//ehsan
     return countitem;
 }
 
-void item_list()//raomi or nasiha
+void item_list()//RAOMI
 {
     cls();
     printf("press .0. Main Menu ");
@@ -615,7 +615,7 @@ void order_view(int order, int quantity, int or_no)//SOUVIK
     }
 }
 
-void backuploader(void)//ehsan
+void backuploader(void)//EHASAN
 {
     for (int i=15; i<=100; i+=5)
     {
@@ -640,7 +640,7 @@ void gap(void)
     printf("\n\n\n\n\n\n\n");
 }
 
-void choice(int ch)//NASIHA RAOMI
+void choice(int ch)//NASIHA
 {
     if((ch >=1 && ch <=3))
     {
@@ -672,7 +672,7 @@ void choice(int ch)//NASIHA RAOMI
     }
 }
 
-void achoice()//Ehsan and souvik
+void achoice()//EHASAN & SOUVIK
 {
 adminpanelchoice:
     ;
@@ -904,7 +904,7 @@ fdelete:
             cls();
             gap();
             pre(4);
-            printf("Total Item Item is:  %d  \n",citem);
+            printf("Total Item variety is:  %d  \n",citem);
             Sleep(2000);
             goto adminchoice;
         }
