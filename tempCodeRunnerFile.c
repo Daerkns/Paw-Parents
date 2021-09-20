@@ -84,9 +84,9 @@ int main()//RAOMI & NASIHA
 	linebreak(1);
     main_menu();
 
-    FILE *sale; 
+    FILE *sale;
     sale=fopen("sales.txt", "a+");
-	printf("\t\tTo buy things press 1\n\t\tTo exit press 0     ");
+	printf("\t\tTo buy things press 1/n/t/tTo exit press 0     ");
 	fflush(stdin);
 	scanf("%d", &cho);
 	if(cho==0)
@@ -97,7 +97,7 @@ int main()//RAOMI & NASIHA
 	{
 		goto sell;
 	}
-sell:	
+sell:
     printf("\t\t\n<<Enter details to order your item>>\n\n\n");
 
     printf("\n\t\tName: ");
@@ -128,7 +128,7 @@ sell:
         {
             linebreak(2);
             pre(3);
-            echo("Please Choice From List: ");
+            echo("Please Choose From List: ");
             linebreak(2);
             Sleep(1000);
             item_list();
@@ -180,7 +180,7 @@ sell:
         printf("Press 1 to confirm and 2 to go back to list :");
 
 confirm:
-		;     
+		;
         int confirm;
 
         fflush(stdin);
@@ -251,7 +251,7 @@ psmenu:
                 {
                     linebreak(2);
                     pre(4);
-                    printf("Please Choice from list : ");
+                    printf("Please Choose from list : ");
                     goto psmenu;
                 }
             }
@@ -298,7 +298,7 @@ psmenu:
 
                 linebreak(2);
                 pre(4);
-                printf("1. Wanna Buy Another Delicious ? ");
+                printf("1. Buy another Product ");
                 linebreak(2);
                 pre(4);
                 printf("2. Main Menu \n");
@@ -327,7 +327,7 @@ psmenu2:
                 {
                     linebreak(2);
                     pre(4);
-                    printf("Please Choice from list : ");
+                    printf("Please Choose from list : ");
                     goto psmenu2;
                 }
             }
@@ -335,7 +335,7 @@ psmenu2:
             {
                 linebreak(2);
                 pre(4);
-                printf("Enter Choice from List : ");
+                printf("Enter Choose from List : ");
                 goto payment;
             }
         }    ///END Confirm Y/y
@@ -357,7 +357,7 @@ psmenu2:
     {
         linebreak(2);
         pre(4);
-        echo("Please Choice From List ");
+        echo("Please Choose From List ");
         linebreak(2);
         Sleep(300);
         item_list();
@@ -377,9 +377,9 @@ void fileloader()
 		}
 		else
 		{
-			insertend(serial, itm, qntt, prc);	
+			insertend(serial, itm, qntt, prc);
 		}
-	}	
+	}
 }
 
 void cls()
@@ -574,7 +574,7 @@ void item_list()//RAOMI
 	char itemnm[40];
     node *temp;
     temp = list;
-		
+
 	while(temp != NULL)
     {
     	pre(1);
@@ -647,7 +647,7 @@ void choice(int ch)//NASIHA
         if(ch == 1)
         {
             item_list();
-        }  
+        }
         else if( ch == 2)
         {
             achoice();
@@ -778,7 +778,7 @@ productadd:
             cls();
 			FILE *admin;
 			admin=fopen("item.txt", "a");
-			
+
             char fproductname[25];
             int fquantity;
             int fdata;
@@ -816,7 +816,7 @@ fprice:
             scanf("%f", &fprice);
 
             linebreak(2);
-            pre(4); 
+            pre(4);
             printf("Submiting your data");
             for(int cs=0; cs<4; cs++)
             {
@@ -825,7 +825,7 @@ fprice:
             }
 			fprintf(admin, "%d %s %.2f %d\n", fdata, fproductname, fprice, fquantity);
 			fclose(admin);
-				
+
             linebreak(2);
             pre(4);
             printf("Adding Item  Successfull....\n");
@@ -995,7 +995,7 @@ fdelete:
  			printf("\n\n\n\t\t\t\tItem updated");
  			getch();
  			goto adminchoice;
- 		}	
+ 		}
  	}
         else if(adminchoice==0)
         {
