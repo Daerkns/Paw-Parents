@@ -86,7 +86,7 @@ int main()//RAOMI & NASIHA
 
     FILE *sale;
     sale=fopen("sales.txt", "a+");
-	printf("\t\tTo buy things press 1\n\t\tTo exit press 0     ");
+	printf("\t\tTo buy things press 1/n/t/tTo exit press 0     ");
 	fflush(stdin);
 	scanf("%d", &cho);
 	if(cho==0)
@@ -128,7 +128,7 @@ sell:
         {
             linebreak(2);
             pre(3);
-            echo("Please Choose From List: ");
+            echo("Please Choice From List: ");
             linebreak(2);
             Sleep(1000);
             item_list();
@@ -251,7 +251,7 @@ psmenu:
                 {
                     linebreak(2);
                     pre(4);
-                    printf("Please Choose from list : ");
+                    printf("Please Choice from list : ");
                     goto psmenu;
                 }
             }
@@ -327,7 +327,7 @@ psmenu2:
                 {
                     linebreak(2);
                     pre(4);
-                    printf("Please Choose from list : ");
+                    printf("Please Choice from list : ");
                     goto psmenu2;
                 }
             }
@@ -335,7 +335,7 @@ psmenu2:
             {
                 linebreak(2);
                 pre(4);
-                printf("Enter Choose from List : ");
+                printf("Enter Choice from List : ");
                 goto payment;
             }
         }    ///END Confirm Y/y
@@ -357,7 +357,7 @@ psmenu2:
     {
         linebreak(2);
         pre(4);
-        echo("Please Choose From List ");
+        echo("Please Choice From List ");
         linebreak(2);
         Sleep(300);
         item_list();
