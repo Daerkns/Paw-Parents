@@ -364,7 +364,7 @@ psmenu2:
     }  ///end get product choice
 }
 
-void fileloader()
+void fileloader()//Ehasan
 {
 	int serial, qntt; float prc; char itm[25];
 	FILE *admin;
