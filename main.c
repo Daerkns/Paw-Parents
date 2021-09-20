@@ -432,7 +432,7 @@ void main_menu()
     choice(main_menu_choice);
 }
 
-void insertend(int data, char productname[25], int quantity, float price)//NASIHA
+void insertend(int data, char productname[25], int quantity, float price)//EHASAN
 {
     node *temp;
 
@@ -463,7 +463,7 @@ void insertend(int data, char productname[25], int quantity, float price)//NASIH
     }
 }
 
-void insertfirst(int data, char productname[25], int quantity, float price)//RAOMI
+void insertfirst(int data, char productname[25], int quantity, float price)//SOUVIK
 {
     node *temp;
     temp=(node *)malloc(sizeof(node));
@@ -476,7 +476,7 @@ void insertfirst(int data, char productname[25], int quantity, float price)//RAO
     list = head ;
 }
 
-void deleteproduct(int serial)//SOUVIK
+void deleteproduct(int serial)//RAOMI
 {
     node *temp;
     temp=(node *)malloc(sizeof(node));
@@ -525,7 +525,7 @@ void deleteproduct(int serial)//SOUVIK
     }
 }
 
-void updateproduct(int udata, int uquantity)//EHASAN
+void updateproduct(int udata, int uquantity)//NASIHA
 {
     node *temp;
     temp = list;
