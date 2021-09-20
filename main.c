@@ -128,7 +128,7 @@ sell:
         {
             linebreak(2);
             pre(3);
-            echo("Please Choice From List: ");
+            echo("Please Choose From List: ");
             linebreak(2);
             Sleep(1000);
             item_list();
