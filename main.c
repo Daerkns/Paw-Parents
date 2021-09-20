@@ -1,4 +1,4 @@
-#include<stdio.h>
+comed#include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
 #include<string.h>
@@ -869,7 +869,7 @@ fdelete:
  		{
  			system("cls");
  			int search, qtt;
- 			printf("\n\n\t\tsearch item(insert serial number: ");
+ 			printf("\n\n\t\tsearch item(insert serial number): ");
  			fflush(stdin);
  			scanf("%d", &search);
  		    node *temp;
