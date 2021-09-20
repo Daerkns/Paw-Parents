@@ -251,7 +251,7 @@ psmenu:
                 {
                     linebreak(2);
                     pre(4);
-                    printf("Please Choice from list : ");
+                    printf("Please Choose from list : ");
                     goto psmenu;
                 }
             }
