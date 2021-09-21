@@ -3,3 +3,7 @@
 3 Tease_Toy 300.00 8
 4 Litter(S) 300.00 46
 5 Litter(M) 550.00 46
+6 Lease 450.00 48
+
+7 Treat 200.00 47
+8 scoop 150.00 50
