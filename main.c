@@ -825,7 +825,7 @@ fprice:
             }
 			fprintf(admin, "%d %s %.2f %d\n", fdata, fproductname, fprice, fquantity);
 			fclose(admin);
-
+			fileloader();
             linebreak(2);
             pre(4);
             printf("Adding Item  Successfull....\n");
@@ -999,7 +999,7 @@ fdelete:
  	}
         else if(adminchoice==0)
         {
-            main_menu();
+            main_menu();   
         }
         else
         {
