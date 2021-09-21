@@ -91,7 +91,7 @@ int main()//RAOMI & NASIHA
 	scanf("%d", &cho);
 	if(cho==0)
 	{
-		main();
+		main_menu();
 	}
 	else
 	{
