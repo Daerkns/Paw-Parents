@@ -86,12 +86,12 @@ int main()//RAOMI & NASIHA
 
     FILE *sale;
     sale=fopen("sales.txt", "a+");
-	printf("\t\tTo buy things press 1/n/t/tTo exit press 0     ");
+	printf("\t\tTo buy things press 1\n\t\tTo exit press 0     ");
 	fflush(stdin);
 	scanf("%d", &cho);
 	if(cho==0)
 	{
-		main();
+		main_menu();
 	}
 	else
 	{
@@ -364,7 +364,7 @@ psmenu2:
     }  ///end get product choice
 }
 
-void fileloader()
+void fileloader()//Ehasan
 {
 	int serial, qntt; float prc; char itm[25];
 	FILE *admin;
@@ -499,12 +499,12 @@ void deleteproduct(int serial)//RAOMI
                 Sleep(400);
             }
             printf("\n\n\n\n\t\t\tDeleted Successfylly \n");
-            Sleep(500);
+            getch();
         }
         else
         {
             printf("\n\n\n\n\t\t\ Item Not Found\n");
-            Sleep(500);
+            getch();
         }
         head = temp ;
     }
@@ -825,7 +825,7 @@ fprice:
             }
 			fprintf(admin, "%d %s %.2f %d\n", fdata, fproductname, fprice, fquantity);
 			fclose(admin);
-
+			fileloader();
             linebreak(2);
             pre(4);
             printf("Adding Item  Successfull....\n");
@@ -869,7 +869,7 @@ fdelete:
  		{
  			system("cls");
  			int search, qtt;
- 			printf("\n\n\t\tsearch item(insert serial number: ");
+ 			printf("\n\n\t\tsearch item(insert serial number): ");
  			fflush(stdin);
  			scanf("%d", &search);
  		    node *temp;
@@ -999,7 +999,7 @@ fdelete:
  	}
         else if(adminchoice==0)
         {
-            main_menu();
+            main_menu();   
         }
         else
         {
